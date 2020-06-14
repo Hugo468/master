@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Restart</title>
+</head>
+
+<body>
+	<nav class="petitmenu">
+<ul>
+	<li><p id="titresite">RESTART</p></li>
+	<li> <a href="monprojet.html">Actualités</a></li>
+	<li> <a href="jeux.html">Jeux</a></li>
+	<li> <a href="materiel.html">Matériel</a></li>
+</ul>
+</nav>
+<header>
+	
+<img id="imagepresentation" onload="switchauto()" src="image1.jpg"/>
+<div id="conteneur_slider">
+<button id="boutongauche" onclick="switchprecedent()" type="submit"><</button>
+<button id="boutondroit" onclick="switchsuivant()" type="submit">></button>
+</div>
+<nav>
+<ul>
+	<li> <a href="monprojet.html">Actualités</a></li>
+	<li> <a href="jeux.html">Jeux</a></li>
+	<li> <a href="videos.html">Vidéos</a></li>
+	<li> <a href="forums.html">Forums</a></li>
+</ul>
+</nav>
+
+</header>
+
+<main>
+
+<div class="article">
+<h3>Contacts</h3>
+<img class="imagearticle" src="contacteznous.png" width="100" height="60" />
+<p>Téléphone : 06 45 95 35 08<br><br>Mail: restart@yahoo.fr
+</p>
+</div>
+
+</main>
+<footer>
+
+<div class="pieddepage">
+<h1>Need Help?</h1>
+<br/><a href="informationslegales.html">Privacy Policy</a></div>
+
+<div class="pieddepage">
+<h1 >Navigation</h1>
+<a href="monprojet.html">Accueil</a>
+<br/><a href="qui_sommes_nous.html">Qui sommes nous ?</a>
+<br/><a href="contact.html">Contact</a></li></div>
+
+<div class="pieddepage">
+<h1>Follow us</h1>
+<br/><a href="https://www.facebook.com/Restart-jeux-vid%C3%A9os-102088761553173/?modal=admin_todo_tour">facebook</a>
+
+</footer>
+<script type="text/javascript">
+
+function switchauto()
+{
+
+}
+
+function switchsuivant()
+{
+	var monimage=document.getElementById("imagepresentation");
+	var source=monimage.getAttribute("src");
+	console.log(source);
+	if(source.charAt(5)=='3')
+	{
+		monimage.setAttribute("src","image1.jpg");
+	}
+	else if (source.charAt(5)=='2')
+	{
+
+		monimage.setAttribute("src","image3.jpg");
+
+	}
+	else if(source.charAt(5)=='1')
+	{
+		monimage.setAttribute("src","image2.jpg");
+	}
+}
+
+function switchprecedent()
+{
+	var monimage=document.getElementById("imagepresentation");
+	var source=monimage.getAttribute("src");
+	console.log(source);
+	if(source.charAt(5)=='3')
+	{
+		monimage.setAttribute("src","image2.jpg");
+	}
+	else if (source.charAt(5)=='2')
+	{
+
+		monimage.setAttribute("src","image1.jpg");
+
+	}
+	else if(source.charAt(5)=='1')
+	{
+		monimage.setAttribute("src","image3.jpg");
+	}
+}
+
+
+</script>
+</body>
+
+<style type="text/css">
+
+label.titre{color: #0c4423;}
+
+div.case{width :25%;}
+
+.petitmenu{
+	display:inline-block;
+}
+#listehaut{
+	display: block;
+}
+#titresite{
+	display: block;
+
+}
+
+
+#boutondroit{
+	border: hidden;
+    background: transparent;
+    width: 70px;
+    height: 300px;
+    margin-top: 155px;
+    margin-bottom: 25px;
+    margin-left:660px;
+    font-size:5em;
+    color: #E9E9E9;}
+
+    #boutondroit:hover{
+	border: hidden;
+    width: 70px;
+    height: 300px;
+    margin-top: 155px;
+    margin-bottom: 25px;
+    margin-left:660px;
+    font-size:5em;
+    color: #E9E9E9;
+	cursor: pointer;
+	background-color: rgba(138,138,138,0.8);
+	transition-duration: 0.4s;}
+
+
+
+    #boutongauche{
+    border: hidden;
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-bottom: 25px;
+    border-radius: 0px 5px 0px 5px;
+    background: transparent;
+    font-size:5em;
+    width: 70px;
+    height: 300px;
+    color: #E9E9E9;
+    
+    }
+
+    #boutongauche:hover{
+    border: hidden;
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-bottom: 25px;
+    font-size:5em;
+    width: 70px;
+    height: 300px;
+    color: #252323;
+    cursor: pointer;
+	background-color: rgba(138,138,138,0.8);
+	transition-duration: 0.4s;
+    
+    }
+
+
+    .article{
+    	font-family: Arial, Helvetica, sans-serif;
+    	margin-top: 30px;
+    	margin-left: 50px;
+    	margin-right: 50px;
+    	margin-bottom: 50px;
+    	background-color: #FBF7F7;
+    	text-align: left;
+    	height: auto;
+    	padding-bottom: 60px;
+
+
+    }
+    video{
+    	margin-left: 45px;
+    }
+
+    .article p{
+    	width: 1000px;
+    	background-color: transparent;
+    	margin-left: 15px;
+    	margin-top: 0px;
+    	margin-right: 60px;
+    	font-size: 1.4em;
+    	color: #252323;
+    	text-align: left;
+    }
+    .article h3{
+
+    padding:30px;
+	color:#252323;
+	font-weight: bold;
+	font-family: "Motiva Sans", Sans-serif;
+	font-size:1.9em;
+}
+	.article img{
+
+	margin-left: 50px;
+    height: 500px;
+    width: 900px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+	}
+
+.pieddepage{
+	display: inline-block;
+	margin-right: 40px;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 0.9em;
+	font-family: "Motiva Sans", Sans-serif;
+	margin-left: 60px;
+	margin-bottom: 10px;
+	
+}
+
+.pieddepage a{
+	color: white;
+}
+
+footer{
+	background-color: #333333;
+}
+
+
+    img{
+
+    margin-left: 200px;
+    /*height: 300px;
+    width: 600px;*/
+    height: 350px;
+    width: 800px; 
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.petitmenu{
+	width: 100%;
+}
+.petitmenu p{
+
+color:white;
+font-weight: bold;
+font-family: "Motiva Sans", Sans-serif;
+font-size:2em;
+}
+
+.petitmenu a  {
+	color: #B1B1B1;
+	font-weight: bold;
+	font-size: 0.9em;
+	font-family: "Motiva Sans", Sans-serif;
+	margin-left: 300px;
+
+}
+
+
+.petitmenu ul  {
+	background-color: #333333;
+}
+.petitmenu li  {
+	border:none;
+	margin-left: 0px;
+	padding:0px;
+	width: 60px;
+	margin-right: 60px;
+
+}
+
+
+nav ul{
+	padding: 0px;
+	margin:0px;
+	list-style-type:none;
+	background-color: #333333;
+
+}
+
+nav li{
+	display: inline-block;
+	height: 40px;
+	margin: 0px;
+	width: 24%;
+	padding: 0px;
+	border-right: 1px solid #CCCCCC;
+	text-align: center;
+	line-height: 40px;
+}
+
+nav li:hover{
+	background-color:#3388BB;
+}
+
+nav li a{
+	display: block;
+	text-decoration: none;
+	font-family: "Motiva Sans", Sans-serif;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+#conteneur_slider{
+ 
+position:absolute;
+top:0px;
+z-index:2;
+}
+
+
+header{
+    background: #1D1D1D;}
+
+p{
+	background: transparent;
+	margin: 0px;
+	text-align: center;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 50px;
+    margin-bottom: 25px;
+    font-size:1em;
+    color:white;
+}
+
+
+option{width: 150px;}
+
+
+body{margin: 0 auto;
+	background-color: #949494;
+
+}
+
+
+
+</style>
+</html>
